@@ -125,6 +125,8 @@ export default function Countries() {
           <div>Average population</div>
           <div>Total GDP</div>
           <div>Years of data</div>
+          <div>Years of data</div>
+          <div>Years of data</div>
         </div>
         {countries?.map((country) => (
           <div
