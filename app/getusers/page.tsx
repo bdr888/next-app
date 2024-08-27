@@ -23,8 +23,8 @@ export default function GetUsers() {
 
   return (
     <div>
-      {data?.map((item) => (
         <div>hello</div>
+      {data?.map((item) => (
         <div>
           <div>{item.description}</div>
           <div>{item.thumbnail}</div>
