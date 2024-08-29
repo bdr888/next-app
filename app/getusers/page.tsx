@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export default function GetUsers() {
   const [data, setData] = useState([]);
@@ -9,7 +9,7 @@ export default function GetUsers() {
     () =>
       async function fetchData() {
         try {
-          const response = await fetch('https://dummyjson.com/products');
+          const response = await fetch("https://dummyjson.com/products");
           const data = await response.json();
           setData(data.products);
         } catch (error) {
@@ -23,7 +23,6 @@ export default function GetUsers() {
 
   return (
     <div>
-        <div>hello</div>
       {data?.map((item) => (
         <div>
           <div>{item.description}</div>
